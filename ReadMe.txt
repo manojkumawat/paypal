@@ -1,5 +1,5 @@
 Camel Router WAR Project with Web Console and REST Support
-==========================================================
+===========================================================
 
 This project bundles the Camel Web Console, REST API, and some
 sample routes as a WAR. You can build the WAR by running
