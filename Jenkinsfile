@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Git SCM') { 
             steps {
-               git credentialsId: 'krishnavagu', url: 'https://github.com/krishnavagu/Paypal.git'
+               git credentialsId: 'manojkumawat', url: 'https://github.com/manojkumawat/Paypal.git'
             }
         }
         stage('Maven Build ') { 
@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Tomcat Deploy') { 
             steps {
-                deploy adapters: [tomcat9(credentialsId: 'Deployment', path: '', url: 'http://54.82.62.22:8089/')], contextPath: null, war: '**/*.war'
+                deploy adapters: [tomcat9(credentialsId: 'Deployment', path: '', url: 'http://52.3.247.91:8080/')], contextPath: null, war: '**/*.war'
             }
         }
     }
